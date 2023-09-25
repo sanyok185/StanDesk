@@ -1700,7 +1700,14 @@ textarea.input {
   line-height: 171.429%;
 }
 
+.swiper-initialized {
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+}
+
 .swiper-gallery {
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
   width: 100%;
 }
 
@@ -2556,7 +2563,7 @@ textarea.input {
   }
 
   .block-mix {
-    aspect-ratio: 360/660;
+    aspect-ratio: 360/660 !important;
   }
 
   .swiper-reviews {
