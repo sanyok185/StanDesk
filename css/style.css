@@ -2159,6 +2159,12 @@ textarea.input {
   }
 }
 
+@media (min-width: 29.99875em) and (min-width: 78.375em) {
+  .advantages__items {
+    gap: 1rem;
+  }
+}
+
 @media (min-width: 29.99875em) {
   .reviews__button {
     display: none;
@@ -2382,10 +2388,6 @@ textarea.input {
 
   .about-hero__delivery {
     font-size: 0.875rem;
-  }
-
-  .advantages__items {
-    gap: 1rem;
   }
 
   .item-advantages {
@@ -2636,10 +2638,6 @@ textarea.input {
 
   .about-hero__delivery {
     font-size: 0.75rem;
-  }
-
-  .advantages__items {
-    gap: 0.5rem;
   }
 
   .item-advantages {
@@ -3457,14 +3455,11 @@ textarea.input {
   }
 
   .advantages__items {
+    border-radius: 0.5rem;
+    overflow: hidden;
     gap: 0;
     -ms-grid-columns: auto;
     grid-template-columns: auto;
-  }
-
-  .advantages__items {
-    border-radius: 0.5rem;
-    overflow: hidden;
   }
 
   .item-advantages {
@@ -3654,18 +3649,6 @@ textarea.input {
 @supports not (font-size: clamp( 0.75rem , 0.7071734475rem  +  0.2141327623vw , 0.875rem )) {
     .about-hero__delivery {
       font-size: calc(0.75rem + 0.125 * (100vw - 20rem) / 58.375);
-    }
-}
-
-@supports (gap: clamp( 0.5rem , 0.3286937901rem  +  0.8565310493vw , 1rem )) {
-    .advantages__items {
-      gap: clamp( 0.5rem , 0.3286937901rem  +  0.8565310493vw , 1rem );
-    }
-}
-
-@supports not (gap: clamp( 0.5rem , 0.3286937901rem  +  0.8565310493vw , 1rem )) {
-    .advantages__items {
-      gap: calc(0.5rem + 0.5 * (100vw - 20rem) / 58.375);
     }
 }
 
@@ -4324,6 +4307,26 @@ textarea.input {
       max-width: calc(15rem + 22.5 * (100vw - 47.99875rem) / 28.50125);
     }
 }
+}
+
+@media (min-width: 29.99875em) and (min-width: 20em) and (max-width: 78.375em) {
+@supports (gap: clamp( 0.5rem , 0.3286937901rem  +  0.8565310493vw , 1rem )) {
+    .advantages__items {
+      gap: clamp( 0.5rem , 0.3286937901rem  +  0.8565310493vw , 1rem );
+    }
+}
+
+@supports not (gap: clamp( 0.5rem , 0.3286937901rem  +  0.8565310493vw , 1rem )) {
+    .advantages__items {
+      gap: calc(0.5rem + 0.5 * (100vw - 20rem) / 58.375);
+    }
+}
+}
+
+@media (min-width: 29.99875em) and (max-width: 20em) {
+  .advantages__items {
+    gap: 0.5rem;
+  }
 }
 
 @media (min-width: 37.5em) and (max-width: 76.5em) {
