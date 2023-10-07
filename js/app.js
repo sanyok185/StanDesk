@@ -4011,10 +4011,7 @@
                 on: {}
             });
             const items = document.querySelectorAll(".bonus__item");
-            document.addEventListener("mousemove", (function() {
-                for (let i = 0; i < items.length; i++) if (swiper.activeIndex == i) items[i].classList.add("item-bonus--black"); else items[i].classList.remove("item-bonus--black");
-            }));
-            document.addEventListener("click", (function() {
+            swiper.on("slideChange", (function() {
                 for (let i = 0; i < items.length; i++) if (swiper.activeIndex == i) items[i].classList.add("item-bonus--black"); else items[i].classList.remove("item-bonus--black");
             }));
             for (let i = 0; i < items.length; i++) items[i].addEventListener("click", (function(e) {
